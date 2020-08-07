@@ -44,7 +44,7 @@ decode_sf(sfc_enc, crs = 4326)
 ## ----sf-----------------------------------------------------------------------
 (sf <- st_as_sf(
   data.frame(
-    id = seq(1,length(sfc)),
+    name = c("A", "B", "C", "D", "E"),
     color = sample(c("red", "green", "blue"), 5, replace = TRUE),
     geometry = sfc
   )

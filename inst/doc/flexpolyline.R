@@ -5,7 +5,7 @@ knitr::opts_chunk$set(
 )
 
 ## ---- eval=FALSE--------------------------------------------------------------
-#  install.packages("flexpolyline") # Not yet published!
+#  install.packages("flexpolyline")
 
 ## ---- eval=FALSE--------------------------------------------------------------
 #  remotes::install_github("munterfinger/flexpolyline")
