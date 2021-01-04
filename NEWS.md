@@ -1,3 +1,8 @@
+# flexpolyline 0.2.1
+
+* Skip input tests of C++ binding on CRAN, closes #35.
+* Added contribution guidelines, code of conduct and issue templates.
+
 # flexpolyline 0.2.0
 
 * Fix clang range-loop-analysis warning on macOS in `flexpolyline.h` (Apple clang version 12.0.0).
