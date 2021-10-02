@@ -8,7 +8,7 @@ knitr::opts_chunk$set(
 #  install.packages("flexpolyline")
 
 ## ---- eval=FALSE--------------------------------------------------------------
-#  remotes::install_github("munterfinger/flexpolyline")
+#  remotes::install_github("munterfi/flexpolyline")
 
 ## ----cpp_encode_decode--------------------------------------------------------
 library(flexpolyline)

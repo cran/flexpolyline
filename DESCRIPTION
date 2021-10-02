@@ -1,7 +1,7 @@
 Package: flexpolyline
 Type: Package
 Title: Flexible Polyline Encoding
-Version: 0.2.3
+Version: 0.2.4
 Authors@R: 
     c(person(given = "Merlin",
              family = "Unterfinger",
@@ -20,21 +20,21 @@ Description: Binding to the C++ implementation of the flexible polyline
     (3) using variable length for each coordinate delta; and
     (4) using 64 URL-safe characters to display the result.
 License: GPL-3
-URL: https://munterfinger.github.io/flexpolyline/,
-        https://github.com/munterfinger/flexpolyline/
-BugReports: https://github.com/munterfinger/flexpolyline/issues/
+URL: https://munterfi.github.io/flexpolyline/,
+        https://github.com/munterfi/flexpolyline/
+BugReports: https://github.com/munterfi/flexpolyline/issues/
 LinkingTo: Rcpp
 Imports: Rcpp, sf (>= 0.9-3)
 Suggests: testthat (>= 2.3.2), stringr (>= 1.4.0), knitr (>= 1.28),
         rmarkdown (>= 2.1), covr (>= 3.5.0)
 Encoding: UTF-8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 VignetteBuilder: knitr
 NeedsCompilation: yes
-Packaged: 2021-04-25 08:44:19 UTC; u228298
+Packaged: 2021-10-02 14:44:32 UTC; munterfi
 Author: Merlin Unterfinger [aut, cre] (<https://orcid.org/0000-0003-2020-2366>),
   HERE Europe B.V. [aut, cph] (Flexible polyline encoding C++
     implementation)
 Maintainer: Merlin Unterfinger <info@munterfinger.ch>
 Repository: CRAN
-Date/Publication: 2021-04-30 09:30:03 UTC
+Date/Publication: 2021-10-02 15:10:02 UTC
