@@ -29,22 +29,23 @@ document.addEventListener('DOMContentLoaded', function(e) {
 </script>
 
 <style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
 
 
 <style type="text/css">
-  code {
-    white-space: pre;
-  }
-  .sourceCode {
-    overflow: visible;
-  }
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
 </style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
@@ -62,55 +63,54 @@ pre > code.sourceCode { white-space: pre-wrap; }
 pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
-  { counter-reset: source-line 0; }
+{ counter-reset: source-line 0; }
 pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
+{ position: relative; left: -4em; counter-increment: source-line; }
 pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
 div.sourceCode
-  {   }
+{ }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
 </style>
 <script>
 // apply pandoc div.sourceCode style to pre.sourceCode instead
@@ -119,13 +119,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   for (var i = 0; i < sheets.length; i++) {
     if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
     try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
+    var j = 0;
+    while (j < rules.length) {
       var rule = rules[j];
       // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
       var style = rule.style.cssText;
       // check if color or background-color is set
-      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
       // replace div.sourceCode by a pre.sourceCode rule
       sheets[i].deleteRule(j);
       sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
@@ -333,23 +340,42 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 
 
-<p>A common way to deal with spatial data in R is the <a href="https://CRAN.R-project.org/package=sf">sf</a> package, which is built on the concept of simple features. According to the the sf package <a href="https://r-spatial.github.io/sf/articles/sf1.html">vignette</a>, simple features are <em>“…a formal standard (ISO 19125-1:2004) that describes how objects in the real world can be represented in computers, with emphasis on the spatial geometry of these objects. It also describes how such objects can be stored in and retrieved from databases, and which geometrical operations should be defined for them.”</em></p>
-<p>The most common geometry types of simple features are: POINT, LINESTRING, POLYGON, MULTIPOINT, MULTILINESTRING, MULTIPOLYGON. All geometry types are based on POINTs. This package supports the encoding and decoding of the geometry types POINT, LINESTRING and POLYGON.</p>
-<p>There are four possible dimension combinations of geometries in the sf package. In the <code>flexpolyine</code> package the first three dimension combinations are supported and represented as follows:</p>
+<p>A common way to deal with spatial data in R is the <a href="https://CRAN.R-project.org/package=sf">sf</a> package, which is
+built on the concept of simple features. According to the the sf package
+<a href="https://r-spatial.github.io/sf/articles/sf1.html">vignette</a>,
+simple features are <em>“…a formal standard (ISO 19125-1:2004) that
+describes how objects in the real world can be represented in computers,
+with emphasis on the spatial geometry of these objects. It also
+describes how such objects can be stored in and retrieved from
+databases, and which geometrical operations should be defined for
+them.”</em></p>
+<p>The most common geometry types of simple features are: POINT,
+LINESTRING, POLYGON, MULTIPOINT, MULTILINESTRING, MULTIPOLYGON. All
+geometry types are based on POINTs. This package supports the encoding
+and decoding of the geometry types POINT, LINESTRING and POLYGON.</p>
+<p>There are four possible dimension combinations of geometries in the
+sf package. In the <code>flexpolyine</code> package the first three
+dimension combinations are supported and represented as follows:</p>
 <ul>
 <li>XY: Represented as line with LNG and LAT dimensions.</li>
-<li>XYZ: Represented as line with LNG, LAT and LEVEL/ALTITUDE/ELEVATION as third dimension.</li>
-<li>XYM: Represented as line with LNG, LAT and CUSTOM1/CUSTOM2 as third dimension.</li>
+<li>XYZ: Represented as line with LNG, LAT and LEVEL/ALTITUDE/ELEVATION
+as third dimension.</li>
+<li>XYM: Represented as line with LNG, LAT and CUSTOM1/CUSTOM2 as third
+dimension.</li>
 <li>XYZM: Not supported.</li>
 </ul>
 <div id="encoding-and-decoding" class="section level2">
 <h2>Encoding and decoding</h2>
 <div id="simple-feature-geometry-sfg" class="section level3">
 <h3>Simple feature geometry (sfg)</h3>
-<p>If no value for <code>third_dim</code> is provided in <code>encode_sf()</code>, the dimensions of the sf geometry are considered. In case of <code>&quot;XYZ&quot;</code> the third dimension is set to <code>&quot;ELEVATION&quot;</code> and thereby recognized again as <code>&quot;XYZ&quot;</code> by <code>decode_sf()</code> during decoding:</p>
+<p>If no value for <code>third_dim</code> is provided in
+<code>encode_sf()</code>, the dimensions of the sf geometry are
+considered. In case of <code>&quot;XYZ&quot;</code> the third dimension is set to
+<code>&quot;ELEVATION&quot;</code> and thereby recognized again as
+<code>&quot;XYZ&quot;</code> by <code>decode_sf()</code> during decoding:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flexpolyline)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Linking to GEOS 3.8.1, GDAL 3.2.1, PROJ 7.2.1</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Linking to GEOS 3.10.2, GDAL 3.4.2, PROJ 8.2.1; sf_use_s2() is TRUE</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>coords <span class="ot">&lt;-</span> <span class="fu">matrix</span>(</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(<span class="fl">8.69821</span>, <span class="fl">50.10228</span>, <span class="fl">10.11111</span>,</span>
@@ -374,7 +400,9 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; CRS:           NA</span></span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   id      dim3                       geometry</span></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1  1 ELEVATION LINESTRING Z (8.69821 50.10...</span></span></code></pre></div>
-<p>In case of <code>&quot;XYM&quot;</code> the third dimension is set to <code>&quot;CUSTOM1&quot;</code> and again set to <code>&quot;XYM&quot;</code> in decoding:</p>
+<p>In case of <code>&quot;XYM&quot;</code> the third dimension is set to
+<code>&quot;CUSTOM1&quot;</code> and again set to <code>&quot;XYM&quot;</code> in
+decoding:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>(sfg_m <span class="ot">&lt;-</span> <span class="fu">st_linestring</span>(coords, <span class="at">dim =</span> <span class="st">&quot;XYM&quot;</span>))</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LINESTRING M (8.69821 50.10228 10.11111, 8.69567 50.10201 20.22222, 8.6915 50.10063 30.33333, 8.68752 50.09878 40.44444)</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -393,7 +421,11 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 </div>
 <div id="simple-feature-geometry-list-column-sfc" class="section level3">
 <h3>Simple feature geometry list-column (sfc)</h3>
-<p>The geometry column in simple feature data sets is called simple feature geometry list-column. The sfc object has a Coordinate Reference System (CRS) assigned. In the case of longitude and latitude data this is most often WGS84 (EPSG: 4326). Objects of type <code>sfc</code> are supported as input in encoding:</p>
+<p>The geometry column in simple feature data sets is called simple
+feature geometry list-column. The sfc object has a Coordinate Reference
+System (CRS) assigned. In the case of longitude and latitude data this
+is most often WGS84 (EPSG: 4326). Objects of type <code>sfc</code> are
+supported as input in encoding:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(sfc <span class="ot">&lt;-</span> <span class="fu">st_as_sfc</span>(</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lapply</span>(<span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">5</span>), <span class="cf">function</span>(x) {</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_linestring</span>(coords[, <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>] <span class="sc">+</span> <span class="fu">runif</span>(<span class="dv">1</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>), <span class="at">dim =</span> <span class="st">&quot;XY&quot;</span>)</span>
@@ -403,35 +435,41 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Geometry set for 5 features </span></span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Geometry type: LINESTRING</span></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Dimension:     XY</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Bounding box:  xmin: 7.688635 ymin: 49.09989 xmax: 9.40586 ymax: 50.80993</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Bounding box:  xmin: 8.486871 ymin: 49.89813 xmax: 9.188719 ymax: 50.59279</span></span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Geodetic CRS:  WGS 84</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LINESTRING (9.13392 50.53799, 9.13138 50.53772,...</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LINESTRING (9.40586 50.80993, 9.40332 50.80966,...</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LINESTRING (8.599163 50.00323, 8.596623 50.0029...</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LINESTRING (8.310973 49.71504, 8.308433 49.7147...</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LINESTRING (7.699325 49.10339, 7.696785 49.1031...</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LINESTRING (8.866288 50.27036, 8.863748 50.2700...</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LINESTRING (8.853021 50.25709, 8.850481 50.2568...</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LINESTRING (8.497561 49.90163, 8.495021 49.9013...</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LINESTRING (8.664703 50.06877, 8.662163 50.0685...</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LINESTRING (9.188719 50.59279, 9.186179 50.5925...</span></span>
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>(sfc_enc <span class="ot">&lt;-</span> <span class="fu">encode_sf</span>(sfc))</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;BFu2u0Jg_33B1B7PzIhaxL7Y&quot; &quot;BFi6j2J0it5B1B7PzIhaxL7Y&quot;</span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [3] &quot;BFmomxJ4wv0B1B7PzIhaxL7Y&quot; &quot;BFg_tvJyn3yB1B7PzIhaxL7Y&quot;</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [5] &quot;BFmw2rJ44_uB1B7PzIhaxL7Y&quot;</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;BF4t6yJq2j2B1B7PzIhaxL7Y&quot; &quot;BF663yJsjh2B1B7PzIhaxL7Y&quot;</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [3] &quot;BFmtywJ417zB1B7PzIhaxL7Y&quot; &quot;BF6hzxJsq80B1B7PzIhaxL7Y&quot;</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [5] &quot;BF-s50Jw1i4B1B7PzIhaxL7Y&quot;</span></span>
 <span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="fu">decode_sf</span>(sfc_enc, <span class="at">crs =</span> <span class="dv">4326</span>)</span>
 <span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Simple feature collection with 5 features and 2 fields</span></span>
 <span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Geometry type: LINESTRING</span></span>
 <span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Dimension:     XY</span></span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Bounding box:  xmin: 7.68863 ymin: 49.09989 xmax: 9.40586 ymax: 50.80993</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Bounding box:  xmin: 8.48687 ymin: 49.89813 xmax: 9.18872 ymax: 50.59279</span></span>
 <span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Geodetic CRS:  WGS 84</span></span>
 <span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   id   dim3                       geometry</span></span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1  1 ABSENT LINESTRING (9.13392 50.5379...</span></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2  2 ABSENT LINESTRING (9.40586 50.8099...</span></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3  3 ABSENT LINESTRING (8.59916 50.0032...</span></span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4  4 ABSENT LINESTRING (8.31097 49.7150...</span></span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5  5 ABSENT LINESTRING (7.69932 49.1033...</span></span></code></pre></div>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1  1 ABSENT LINESTRING (8.86629 50.2703...</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2  2 ABSENT LINESTRING (8.85302 50.2570...</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3  3 ABSENT LINESTRING (8.49756 49.9016...</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4  4 ABSENT LINESTRING (8.6647 50.06877...</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5  5 ABSENT LINESTRING (9.18872 50.5927...</span></span></code></pre></div>
 </div>
 <div id="simple-feature-sf" class="section level3">
 <h3>Simple feature (sf)</h3>
-<p>A simple feature is a geometry that is connected with further characteristics (other than it’s coordinates), which in practice means a <code>data.frame</code> (also <code>data.table</code> or <code>tibble</code>) with an <code>sfc</code> column. The <strong>flexpolyline</strong> package only takes care of the coordinates of the LINESTRINGs in the sf object, other columns and the CRS information are not encoded and stored in the string:</p>
+<p>A simple feature is a geometry that is connected with further
+characteristics (other than it’s coordinates), which in practice means a
+<code>data.frame</code> (also <code>data.table</code> or
+<code>tibble</code>) with an <code>sfc</code> column. The
+<strong>flexpolyline</strong> package only takes care of the coordinates
+of the LINESTRINGs in the sf object, other columns and the CRS
+information are not encoded and stored in the string:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>(sf <span class="ot">&lt;-</span> <span class="fu">st_as_sf</span>(</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;C&quot;</span>, <span class="st">&quot;D&quot;</span>, <span class="st">&quot;E&quot;</span>),</span>
@@ -442,41 +480,47 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Simple feature collection with 5 features and 2 fields</span></span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Geometry type: LINESTRING</span></span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Dimension:     XY</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Bounding box:  xmin: 7.688635 ymin: 49.09989 xmax: 9.40586 ymax: 50.80993</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Bounding box:  xmin: 8.486871 ymin: 49.89813 xmax: 9.188719 ymax: 50.59279</span></span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Geodetic CRS:  WGS 84</span></span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   name color                       geometry</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1    A  blue LINESTRING (9.13392 50.5379...</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2    B green LINESTRING (9.40586 50.8099...</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3    C green LINESTRING (8.599163 50.003...</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4    D  blue LINESTRING (8.310973 49.715...</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5    E  blue LINESTRING (7.699325 49.103...</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1    A green LINESTRING (8.866288 50.270...</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2    B green LINESTRING (8.853021 50.257...</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3    C green LINESTRING (8.497561 49.901...</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4    D  blue LINESTRING (8.664703 50.068...</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5    E   red LINESTRING (9.188719 50.592...</span></span>
 <span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>(sf_enc <span class="ot">&lt;-</span> <span class="fu">encode_sf</span>(sf))</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;BFu2u0Jg_33B1B7PzIhaxL7Y&quot; &quot;BFi6j2J0it5B1B7PzIhaxL7Y&quot;</span></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [3] &quot;BFmomxJ4wv0B1B7PzIhaxL7Y&quot; &quot;BFg_tvJyn3yB1B7PzIhaxL7Y&quot;</span></span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [5] &quot;BFmw2rJ44_uB1B7PzIhaxL7Y&quot;</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;BF4t6yJq2j2B1B7PzIhaxL7Y&quot; &quot;BF663yJsjh2B1B7PzIhaxL7Y&quot;</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [3] &quot;BFmtywJ417zB1B7PzIhaxL7Y&quot; &quot;BF6hzxJsq80B1B7PzIhaxL7Y&quot;</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [5] &quot;BF-s50Jw1i4B1B7PzIhaxL7Y&quot;</span></span>
 <span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="fu">decode_sf</span>(sf_enc, <span class="at">crs =</span> <span class="dv">4326</span>)</span>
 <span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Simple feature collection with 5 features and 2 fields</span></span>
 <span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Geometry type: LINESTRING</span></span>
 <span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Dimension:     XY</span></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Bounding box:  xmin: 7.68863 ymin: 49.09989 xmax: 9.40586 ymax: 50.80993</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Bounding box:  xmin: 8.48687 ymin: 49.89813 xmax: 9.18872 ymax: 50.59279</span></span>
 <span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Geodetic CRS:  WGS 84</span></span>
 <span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   id   dim3                       geometry</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1  1 ABSENT LINESTRING (9.13392 50.5379...</span></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2  2 ABSENT LINESTRING (9.40586 50.8099...</span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3  3 ABSENT LINESTRING (8.59916 50.0032...</span></span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4  4 ABSENT LINESTRING (8.31097 49.7150...</span></span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5  5 ABSENT LINESTRING (7.69932 49.1033...</span></span></code></pre></div>
-<p><strong>Note:</strong> The columns <code>&quot;name&quot;</code> and <code>&quot;color&quot;</code> were not encoded and are missing after decoding. The CRS has to be provided in the decoding by the <code>crs</code> argument. Otherwise it is set to <code>sf::NA_crs_</code>.</p>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1  1 ABSENT LINESTRING (8.86629 50.2703...</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2  2 ABSENT LINESTRING (8.85302 50.2570...</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3  3 ABSENT LINESTRING (8.49756 49.9016...</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4  4 ABSENT LINESTRING (8.6647 50.06877...</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5  5 ABSENT LINESTRING (9.18872 50.5927...</span></span></code></pre></div>
+<p><strong>Note:</strong> The columns <code>&quot;name&quot;</code> and
+<code>&quot;color&quot;</code> were not encoded and are missing after decoding.
+The CRS has to be provided in the decoding by the <code>crs</code>
+argument. Otherwise it is set to <code>sf::NA_crs_</code>.</p>
 </div>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
 <ul>
-<li><a href="https://CRAN.R-project.org/package=sf">CRAN: Simple Features for R</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Simple_Features">Wikipedia: Simple Features</a></li>
-<li><a href="https://www.ogc.org/standards/sfa">OGC: Simple Feature Access</a></li>
+<li><a href="https://CRAN.R-project.org/package=sf">CRAN: Simple
+Features for R</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Simple_Features">Wikipedia:
+Simple Features</a></li>
+<li><a href="https://www.ogc.org/standards/sfa">OGC: Simple Feature
+Access</a></li>
 </ul>
 </div>
 
