@@ -1,7 +1,7 @@
 Package: flexpolyline
 Type: Package
 Title: Flexible Polyline Encoding
-Version: 0.2.6
+Version: 0.2.7
 Authors@R: 
     c(person(given = "Merlin",
              family = "Unterfinger",
@@ -28,13 +28,13 @@ Imports: Rcpp, sf (>= 0.9-3)
 Suggests: testthat (>= 2.3.2), stringr (>= 1.4.0), knitr (>= 1.28),
         rmarkdown (>= 2.1), covr (>= 3.5.0)
 Encoding: UTF-8
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 VignetteBuilder: knitr
 NeedsCompilation: yes
-Packaged: 2022-08-23 16:56:57 UTC; munterfi
+Packaged: 2023-01-06 08:07:17 UTC; munterfi
 Author: Merlin Unterfinger [aut, cre] (<https://orcid.org/0000-0003-2020-2366>),
   HERE Europe B.V. [aut, cph] (Flexible polyline encoding C++
     implementation)
 Maintainer: Merlin Unterfinger <info@munterfinger.ch>
 Repository: CRAN
-Date/Publication: 2022-08-23 17:30:02 UTC
+Date/Publication: 2023-01-08 14:50:02 UTC
