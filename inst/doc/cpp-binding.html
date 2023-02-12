@@ -353,18 +353,18 @@ is longitude, latitude) with its coordinates to <code>encode()</code>.
 The default precision value is set to <code>5</code>. If a matrix with
 two columns is provided, the third dimension is automatically set to
 <code>&quot;ABSENT&quot;</code>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flexpolyline)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>line2d <span class="ot">&lt;-</span> <span class="fu">matrix</span>(</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="fl">8.69821</span>, <span class="fl">50.10228</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="fl">8.69567</span>, <span class="fl">50.10201</span>,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="fl">8.69150</span>, <span class="fl">50.10063</span>,</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="fl">8.68752</span>, <span class="fl">50.09878</span>),</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>(encodes2d <span class="ot">&lt;-</span> <span class="fu">encode</span>(line2d, <span class="at">precision =</span> <span class="dv">5</span>))</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;BFoz5xJ67i1B1B7PzIhaxL7Y&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(flexpolyline)</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>line2d <span class="ot">&lt;-</span> <span class="fu">matrix</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>  <span class="fu">c</span>(<span class="fl">8.69821</span>, <span class="fl">50.10228</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>    <span class="fl">8.69567</span>, <span class="fl">50.10201</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>    <span class="fl">8.69150</span>, <span class="fl">50.10063</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>    <span class="fl">8.68752</span>, <span class="fl">50.09878</span>),</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>  <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>)</span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>(encodes2d <span class="ot">&lt;-</span> <span class="fu">encode</span>(line2d, <span class="at">precision =</span> <span class="dv">5</span>))</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a><span class="co">#&gt; [1] &quot;BFoz5xJ67i1B1B7PzIhaxL7Y&quot;</span></span></code></pre></div>
 <p>If a matrix with three columns is passed, a line with a third
 dimension is encoded. The type of the third dimension can be passed to
 the encoding and supports the following selection, that are specified
@@ -382,16 +382,16 @@ via an integer value via the <code>third_dim</code> argument:</p>
 <p>By default the precision of the third dimension
 <code>third_dim_precision</code> is set to the same value as the
 precision value for the longitude and latitude dimensions.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>line3d <span class="ot">&lt;-</span> <span class="fu">matrix</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="fl">8.69821</span>, <span class="fl">50.10228</span>, <span class="fl">10.11111</span>,</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="fl">8.69567</span>, <span class="fl">50.10201</span>, <span class="fl">20.22222</span>,</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="fl">8.69150</span>, <span class="fl">50.10063</span>, <span class="fl">30.33333</span>,</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="fl">8.68752</span>, <span class="fl">50.09878</span>, <span class="fl">40.44444</span>),</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">ncol =</span> <span class="dv">3</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>(encodes3d <span class="ot">&lt;-</span> <span class="fu">encode</span>(line3d, <span class="at">precision =</span> <span class="dv">5</span>, <span class="at">third_dim =</span> <span class="dv">3</span>, <span class="at">third_dim_precision =</span> <span class="dv">5</span>))</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;B1Voz5xJ67i1Bu629B1B7Pu629BzIhau629BxL7Yu629B&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>line3d <span class="ot">&lt;-</span> <span class="fu">matrix</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>  <span class="fu">c</span>(<span class="fl">8.69821</span>, <span class="fl">50.10228</span>, <span class="fl">10.11111</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>    <span class="fl">8.69567</span>, <span class="fl">50.10201</span>, <span class="fl">20.22222</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>    <span class="fl">8.69150</span>, <span class="fl">50.10063</span>, <span class="fl">30.33333</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>    <span class="fl">8.68752</span>, <span class="fl">50.09878</span>, <span class="fl">40.44444</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>  <span class="at">ncol =</span> <span class="dv">3</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a>)</span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a>(encodes3d <span class="ot">&lt;-</span> <span class="fu">encode</span>(line3d, <span class="at">precision =</span> <span class="dv">5</span>, <span class="at">third_dim =</span> <span class="dv">3</span>, <span class="at">third_dim_precision =</span> <span class="dv">5</span>))</span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a><span class="co">#&gt; [1] &quot;B1Voz5xJ67i1Bu629B1B7Pu629BzIhau629BxL7Yu629B&quot;</span></span></code></pre></div>
 </div>
 <div id="decode" class="section level2">
 <h2>Decode</h2>
@@ -399,21 +399,21 @@ precision value for the longitude and latitude dimensions.</p>
 passed to the <code>decode()</code> function. The function detects from
 the encoded string if it is a two-dimensional or three-dimensional
 line:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">decode</span>(encodes2d)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;          LNG      LAT</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1,] 8.69821 50.10228</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [2,] 8.69567 50.10201</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [3,] 8.69150 50.10063</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [4,] 8.68752 50.09878</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">decode</span>(encodes2d)</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="co">#&gt;          LNG      LAT</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="co">#&gt; [1,] 8.69821 50.10228</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co">#&gt; [2,] 8.69567 50.10201</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">#&gt; [3,] 8.69150 50.10063</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="co">#&gt; [4,] 8.68752 50.09878</span></span></code></pre></div>
 <p>In the case of a three-dimensional line, the third column is named
 after the name of the third dimension that was chosen during the
 encoding (in this example <code>&quot;ELEVATION&quot;</code>):</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">decode</span>(encodes3d)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;          LNG      LAT ELEVATION</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1,] 8.69821 50.10228  10.11111</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [2,] 8.69567 50.10201  20.22222</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [3,] 8.69150 50.10063  30.33333</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [4,] 8.68752 50.09878  40.44444</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">decode</span>(encodes3d)</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="co">#&gt;          LNG      LAT ELEVATION</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="co">#&gt; [1,] 8.69821 50.10228  10.11111</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="co">#&gt; [2,] 8.69567 50.10201  20.22222</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="co">#&gt; [3,] 8.69150 50.10063  30.33333</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="co">#&gt; [4,] 8.68752 50.09878  40.44444</span></span></code></pre></div>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
